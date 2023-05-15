@@ -1,6 +1,6 @@
 {
-  "name": "layouts-pusher",
-  "version": "1.2.22",
+  "name": "strong-hooker",
+  "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
