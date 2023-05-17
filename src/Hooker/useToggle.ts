@@ -1,9 +1,16 @@
 import * as React from "react"
 
 export const useToggle = () => {
+  //Toggle state
   const [isToggle, setToggle] = React.useState<boolean>(false)
 
-  const handleToggle = () => setToggle((crt) => !crt)
+  //Toggling the boolean
+  const handleToggle = () => {
+    setToggle((crt) => !crt)
+  }
 
-  return [isToggle, handleToggle]
+  return {
+    isToggle,
+    toggle: handleToggle
+  }
 }
