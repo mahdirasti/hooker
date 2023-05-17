@@ -14,11 +14,11 @@ type Action<T> =
   | { type: "fetched"; payload: T }
   | { type: "error"; payload: Error }
 
-export function useFetch<T = unknown>(
+export const useFetch = <T = unknown>(
   url?: string,
   condition: boolean = true,
   deps: any[] = []
-): State<T> {
+): State<T> => {
   const [fetchDep, setFetchDep] = useState(Math.random() * 10000)
 
   const cache = useRef<Cache<T>>({})

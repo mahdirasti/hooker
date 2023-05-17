@@ -1,6 +1,6 @@
 import * as React from "react"
 
-let timer: NodeJS.Timer
+let timer: any
 
 export const useTimer = (initialNumber: number, stepTime: number) => {
   const [number, setNumber] = React.useState(initialNumber)
